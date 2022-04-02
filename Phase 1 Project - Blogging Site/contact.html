@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact : Blogging Portal</title>
+
+
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+          <a href="/" class="logo">blog</a>
+  
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+  
+          <div class="nav__link hide">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+          </div>
+        </nav>
+      </header>
+<div>
+      <section id="contact">      
+        <div class="contact-form">
+          <div class="container">
+            <div class="row justify-content-center"> 
+              <div class="offset-top">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                  <div class="contact-block wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="section-header">   
+                      <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Contact</p>       
+                      <h2 class="section-title">Love to Hear From You</h2>
+                    </div>
+                    <form id="contactForm">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                            <div class="help-block with-errors"></div>
+                          </div>                                 
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="text" placeholder="Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                            <div class="help-block with-errors"></div>
+                          </div> 
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required="" data-error="Please enter your subject">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group"> 
+                            <textarea class="form-control" id="message" placeholder="Message" rows="7" data-error="Write your message" required></textarea>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                          <div class="submit-button">
+                            <button class="btn btn-common btn-effect" id="submit" type="submit">Submit</button>
+                            <div id="msgSubmit" class="h3 hidden"></div> 
+                            <div class="clearfix"></div> 
+                            <!--script>
+                                const bt = document.getElementById("submit");
+                                bt.addEventListener("click", function()
+                                {
+                                    //alert("Your message has been delivered.");
+                                if(!alert('Your message has been delivered.')){
+                                    window.location.reload();
+                                    }
+
+                                })
+                            </script-->
+                          </div>
+                        </div>
+                      </div>            
+                    </form>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>        
+      </section>
+    </div>
+
+     
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="copyright">JoshuaCreations.com © 2021</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLink = document.querySelector('.nav__link');
+    hamburger.addEventListener('click', () => {
+    navLink.classList.toggle('hide');
+    });
+  </script>
+    
+</html>

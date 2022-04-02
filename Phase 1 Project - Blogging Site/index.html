@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home : Blogging Portal</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="/" class="logo">blog</a>
+
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+
+        <div class="nav__link hide">
+          <a href="index.html">home</a>
+          <a href="about.html">about</a>
+          <a href="contact.html">contact</a>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <div class="leftHeader">
+        <button id="newQuestion" style="margin:10px;">New Blog</button>
+        <input id="search" style="margin:10px;" placeholder="Search"/>
+      </div><br>
+  <div class="container">
+    <div class="leftPane">
+      <div class="heading">
+                  <h1><center>Blogs</center></h1>
+              </div>
+      <div id="questionListContainer">
+
+      </div>
+    </div>
+    <div class="rightPane">
+      <div id="div_header" class="container_input_title">
+          <h2>Welcome to Blogging Portal!</h2>
+          Enter a title and its content to get started.
+        </div><br><br>
+      <div class="questionContainer" id="questionContainer">
+        <input id="questionTitle" placeholder="Title" required data-error="Please enter title"><br><br>
+        <textarea id="questionDescription" placeholder="Content" required data-error="Please enter content"></textarea>
+        <button id="askQuestion" class="actions">Submit Blog</button>
+      </div>
+      <div id="questionDisplay">
+
+      </div><br><br>
+      <div id="answerFormContainer" style="display:none;">
+        <input placeholder="Name" id="nameCommentator"/><br><br>
+        <input placeholder="Comment" id="answerCommentator"/>
+        <button id="submitAnswer">Submit</button>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+
+
+    <div id = "foot" class="footer-basic" style="display:block;">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="copyright">JoshuaCreations.com © 2021</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLink = document.querySelector('.nav__link');
+    hamburger.addEventListener('click', () => {
+    navLink.classList.toggle('hide');
+    });
+  </script>
+  <script >
+    </script>
+</html>
